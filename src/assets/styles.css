@@ -1,0 +1,50 @@
+.calculatorContainer {
+    width: 500px;
+    margin: 100px auto;
+    background-color: #444;
+    padding: 50px 15px;
+    border-radius: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    grid-template-areas:
+        ". . . ."
+        ". . . ."
+        ". . . ."
+        ". . . ."
+        ". . . .";
+}
+
+.calculatorButton {
+    padding: 20px;
+    font-size: 30px;
+    border: solid 1px white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.calculatorButton:hover {
+    background-color: #222;
+}
+
+.calculatorScreen {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    background-color: #1BD3A1;
+    padding: 20px;
+    font-family: "Consolas";
+    border: 1px solid white;
+
+}
+
+.calculatorCurrentValue {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
